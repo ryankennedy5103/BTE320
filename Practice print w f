@@ -1,0 +1,5 @@
+month = "august"
+day = 28
+year = 2025
+
+print(f"This uses subscribed on: {month} {day}, {2025})
