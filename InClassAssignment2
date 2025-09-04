@@ -1,0 +1,70 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNP9f2hmzU1yw17N3T5XoF8",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/ryankennedy5103/BTE320/blob/main/InClassAssignment2\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 1,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "fjjXxb3pndPJ",
+        "outputId": "bff9bc5d-f7dd-4dfc-b2c3-3a08051e2078"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter demand (units/year): 100\n",
+            "Enter reorder cost ($/unit): 1.5\n",
+            "Enter holding cost ($/unit/year): 3\n",
+            "eoq = 10.0 units\n"
+          ]
+        }
+      ],
+      "source": [
+        "Demand = input(\"Enter demand (units/year): \")\n",
+        "Demand = int(Demand)\n",
+        "\n",
+        "\n",
+        "Reorder = input(\"Enter reorder cost ($/unit): \")\n",
+        "Reorder = float(Reorder)\n",
+        "\n",
+        "Holding = input(\"Enter holding cost ($/unit/year): \")\n",
+        "Holding = float(Holding)\n",
+        "\n",
+        "#Process: Calculate EOQ\n",
+        "eoq = (2 * Demand * Reorder / Holding) ** .5\n",
+        "\n",
+        "#Output: Display\n",
+        "print(f\"eoq = {eoq} units\")"
+      ]
+    }
+  ]
+}
