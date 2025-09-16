@@ -1,0 +1,88 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyN3caNzfefQFTb8liAMvWLS",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/ryankennedy5103/BTE320/blob/main/reuploadinclassassignment3\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 1,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "E_JYFRl2qKNE",
+        "outputId": "aa487272-53b5-49ff-b33f-366ccc4ee344"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter the first number: 5\n",
+            "Enter the second number: 5\n",
+            "Enter the operation (+, -, *, /,**,//,%): *\n",
+            "Result: 25.0\n"
+          ]
+        }
+      ],
+      "source": [
+        "#Inputs from user\n",
+        "num1 = float(input(\"Enter the first number: \"))\n",
+        "num2 = float(input(\"Enter the second number: \"))\n",
+        "operation = input(\"Enter the operation (+, -, *, /,**,//,%): \")\n",
+        "\n",
+        "#Operation from inputs\n",
+        "if operation == \"+\":\n",
+        "  result = num1 + num2\n",
+        "elif operation == \"-\":\n",
+        "  result = num1 - num2\n",
+        "elif operation == \"*\":\n",
+        "  result = num1 * num2\n",
+        "elif operation == \"/\":\n",
+        "  if num2 == 0:\n",
+        "    print(\"Cannot divide by zero\")\n",
+        "    result = \"---\"\n",
+        "  else:\n",
+        "    result = num1 / num2\n",
+        "elif operation == \"**\":\n",
+        "  result = num1 ** num2\n",
+        "elif operation == \"//\":\n",
+        "  if num2 == 0:\n",
+        "    print(\"Cannot divide by zero\")\n",
+        "    result = \"---\"\n",
+        "  else:\n",
+        "    result = num1 // num2\n",
+        "elif operation == \"%\":\n",
+        "  result = num1 % num2\n",
+        "else:\n",
+        "  print(\"Invalid operation\")\n",
+        "\n",
+        "#Print Result\n",
+        "print(\"Result:\", result)"
+      ]
+    }
+  ]
+}
